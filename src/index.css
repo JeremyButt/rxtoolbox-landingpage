@@ -1,14 +1,24 @@
+body{
+    margin:0;
+    padding:0;
+}
+
 .banner{
-    background-color: blueviolet;
-    width: 90%;
+    border-color: blueviolet;
+    border-width: 2px;
+    border-style: solid;
+    width: 95%;
     height: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: absolute;
 }
 
 .body{
-    background-color: rgb(226, 208, 43);
+    background-color: rgb(64, 171, 161);
+    padding-top: 3em;
     width: 100%;
     height: 100%;
 }
@@ -18,6 +28,6 @@
 }
 
 .logo{
-    height: 54px;
-    width: 54px;
+    height: 100%;
+    width: height;
 }
