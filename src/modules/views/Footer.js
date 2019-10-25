@@ -24,6 +24,10 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
     backgroundColor: theme.palette.secondary.light,
+    borderBottomStyle: 'solid',
+    borderBottomColor: 'red',
+    borderTopStyle: 'solid',
+    borderTopColor: 'red',
   },
   container: {
     marginTop: theme.spacing(8),
@@ -79,7 +83,7 @@ export default function AppFooter() {
               spacing={2}
             >
               <Grid item className={classes.icons}>
-                <a href="https://facebook.com" className={classes.icon}>
+                <a href="https://www.facebook.com/RxToolboxSolutions" className={classes.icon}>
                   <img src={facebook} alt="Facebook" height='35' width='35' />
                 </a>
                 <a href="https://twitter.com" className={classes.icon}>

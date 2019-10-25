@@ -16,7 +16,7 @@ const styles = theme => ({
     marginTop: theme.spacing(10),
     marginBottom: 0,
     display: 'flex',
-    paddingBottom: theme.spacing(10)
+    paddingBottom: theme.spacing(10),
   },
   cardWrapper: {
     zIndex: 1,
