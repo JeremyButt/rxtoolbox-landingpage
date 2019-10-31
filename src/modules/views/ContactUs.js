@@ -9,7 +9,7 @@ import TextField from '../components/TextField';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
 
-import animation from '../static/img/animation.gif';
+import animation from '../static/img/animation-crop.gif';
 
 const styles = theme => ({
   root: {

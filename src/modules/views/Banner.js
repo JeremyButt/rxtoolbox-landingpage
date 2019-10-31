@@ -9,6 +9,7 @@ import logo from '../static/img/logo_nobackground.png';
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
+      color: 'black',
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -29,7 +30,8 @@ export default function Banner () {
                 style={{ 
                     background: 'transparent', 
                     boxShadow: 'none',
-                    position: 'absolute'
+                    position: 'absolute',
+                    color: 'black',
                     }}
         >
             <Toolbar>
@@ -41,7 +43,8 @@ export default function Banner () {
                 <Typography variant="h6" 
                             className={classes.title}
                             style={{
-                                paddingLeft: '2em'
+                                paddingLeft: '2em',
+                                color: 'black',
                             }}
                 >
                     RxToolbox

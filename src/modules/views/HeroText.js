@@ -37,11 +37,9 @@ function ProductHero(props) {
 
   return (
     <Container maxWidth={false} className={classes.container}>
-      <Typography color="inherit" align="center" variant="h4" marked="center">
-        Lack of bandwidth stopping outbound patient communications?
-      </Typography>
       <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-        RxNotify by RxToolbox enables independant pharmacists to have custom and personalized automated outbound patient communications.
+        RxNotify empowers independant pharmacists to improve patient engagment and 
+        increase workflow efficiency by opening and automating communication channels.
       </Typography>
     </Container>
   );
