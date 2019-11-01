@@ -11,9 +11,8 @@ import FeatureList from './modules/views/FeatureList';
 import ContactUs from './modules/views/ContactUs';
 import Footer from './modules/views/Footer';
 
-class Home extends React.Component{
-    render(){
-      return (
+export default function Home () {
+    return (
         <React.Fragment>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
@@ -25,9 +24,5 @@ class Home extends React.Component{
                 <Footer/>
             </ThemeProvider>
         </React.Fragment>
-      );
-    }  
+    );
 }
-
-export default Home;
-

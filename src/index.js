@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 
 import Home from './Home';
 
-// ========================================
+// ======================================== //
+//    Entry Point                           //
+// ======================================== //
 
 ReactDOM.render(
     <Home/>,

@@ -23,9 +23,6 @@ const styles = theme => ({
     h5: {
         marginBottom: theme.spacing(4),
         marginTop: theme.spacing(4),
-        [theme.breakpoints.up('sm')]: {
-        marginTop: theme.spacing(10),
-        },
     },
     more: {
         marginTop: theme.spacing(2),
@@ -33,20 +30,20 @@ const styles = theme => ({
 });
 
 function ProductHero(props) {
-  const { classes } = props;
+	const { classes } = props;
 
-  return (
-    <Container maxWidth={false} className={classes.container}>
-      <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-        RxNotify empowers independant pharmacists to improve patient engagment and 
-        increase workflow efficiency by opening and automating communication channels.
-      </Typography>
-    </Container>
-  );
+	return (
+		<Container maxWidth={false} className={classes.container}>
+			<Typography color="inherit" align="center" variant="h5" className={classes.h5}>
+				RxNotify empowers independant pharmacists to improve patient engagment and 
+				increase workflow efficiency by opening and automating communication channels.
+			</Typography>
+		</Container>
+	);
 }
 
 ProductHero.propTypes = {
-  classes: PropTypes.object.isRequired,
+  	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(ProductHero);
