@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/App'
+import Home from './Home';
 
-import './index.css';
-
-// ========================================
+// ======================================== //
+//    Entry Point                           //
+// ======================================== //
 
 ReactDOM.render(
-    <App />,
+    <Home/>,
     document.getElementById('root')
   );
+
+document.body.style.lineHeight = '0';
