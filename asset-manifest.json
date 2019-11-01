@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/rxtoolbox-landingpage/static/js/main.02a14572.chunk.js",
+    "main.js.map": "/rxtoolbox-landingpage/static/js/main.02a14572.chunk.js.map",
+    "runtime-main.js": "/rxtoolbox-landingpage/static/js/runtime-main.f63d3640.js",
+    "runtime-main.js.map": "/rxtoolbox-landingpage/static/js/runtime-main.f63d3640.js.map",
+    "static/js/2.5418577c.chunk.js": "/rxtoolbox-landingpage/static/js/2.5418577c.chunk.js",
+    "static/js/2.5418577c.chunk.js.map": "/rxtoolbox-landingpage/static/js/2.5418577c.chunk.js.map",
+    "index.html": "/rxtoolbox-landingpage/index.html",
+    "precache-manifest.206799597385db7b363f901b58bd83b1.js": "/rxtoolbox-landingpage/precache-manifest.206799597385db7b363f901b58bd83b1.js",
+    "service-worker.js": "/rxtoolbox-landingpage/service-worker.js",
+    "static/media/animation-crop.gif": "/rxtoolbox-landingpage/static/media/animation-crop.0966fbea.gif",
+    "static/media/bullhorn.PNG": "/rxtoolbox-landingpage/static/media/bullhorn.9386f5a1.PNG",
+    "static/media/facebook.PNG": "/rxtoolbox-landingpage/static/media/facebook.4f38ca14.PNG",
+    "static/media/logo_nobackground.png": "/rxtoolbox-landingpage/static/media/logo_nobackground.ee15bc8c.png",
+    "static/media/personalized.PNG": "/rxtoolbox-landingpage/static/media/personalized.38010786.PNG",
+    "static/media/productCurvyLines.png": "/rxtoolbox-landingpage/static/media/productCurvyLines.3a1df6c1.png",
+    "static/media/progress.PNG": "/rxtoolbox-landingpage/static/media/progress.b6b5315d.PNG",
+    "static/media/twitter.PNG": "/rxtoolbox-landingpage/static/media/twitter.89c85cab.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f63d3640.js",
+    "static/js/2.5418577c.chunk.js",
+    "static/js/main.02a14572.chunk.js"
+  ]
+}
