@@ -79,7 +79,7 @@ function HeroAnimation(props) {
                         Too busy to call patients?
                     </Typography>
                     <Typography variant="h5" align='center' gutterBottom style={{paddingBottom: '15%'}}>
-                        RxNotify enables you to notify patients of the status of their prescription.
+                        RxNotify enables you to automatically notify all patients of the status of their prescription.
                     </Typography>
                     <Button type="submit" color="primary" variant="contained" className={classes.button} href="#contact">
                         Contact Us

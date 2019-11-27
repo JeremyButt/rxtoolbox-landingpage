@@ -33,8 +33,7 @@ function ProductHero(props) {
 	return (
 		<Container maxWidth={false} className={classes.container}>
 			<Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-				RxNotify empowers independant pharmacists to improve patient engagment and 
-				increase workflow efficiency by opening and automating communication channels.
+                <span style={{color: '#0082D9'}}>RxNotify</span> empowers <span style={{color: 'red'}}>independent pharmacies</span> improve <span style={{color: '#0082D9'}}>patient engagement</span> and increase <span style={{color: '#0082D9'}}>productivity</span>.
 			</Typography>
 		</Container>
 	);

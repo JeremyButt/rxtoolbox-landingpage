@@ -82,10 +82,10 @@ function ProductValues(props) {
 								alt="bullhorn"
 							/>
 							<Typography variant="h6" className={classes.title}>
-								Mass Notifications
+								Pharmacy Announcements
 							</Typography>
 							<Typography variant="h5" className={classes.text}>
-								Blast out pharmacy related notification to all patients.
+								Blast out pharmacy related announcements to all patients.
 							</Typography>
 						</div>
 					</Grid>
