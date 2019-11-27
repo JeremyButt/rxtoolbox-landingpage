@@ -15,10 +15,8 @@ const styles = theme => ({
         display: 'flex',
         backgroundColor: '#1f211f', 
         backgroundPosition: 'center',
-        borderTopStyle: 'solid',
-        borderTopColor: 'red',
         borderBottomStyle: 'solid',
-        borderBottomColor: 'red',
+        borderBottomColor: '#0082D9',
     },
     h5: {
         marginBottom: theme.spacing(4),

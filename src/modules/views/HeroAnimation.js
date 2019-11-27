@@ -13,16 +13,20 @@ import animation from '../static/img/animation-crop.gif';
 import background from '../static/img/productCurvyLines.png';
 
 const styles = theme => ({
-    root: {
-        paddingTop: theme.spacing(20),
-		paddingBottom: theme.spacing(10),
-		paddingLeft: theme.spacing(11),
+    preroot:{
         backgroundColor: theme.palette.secondary.light,
         borderBottomStyle: 'solid',
-		borderBottomColor: 'red',
+        borderBottomColor: '#0082D9',
+    },
+    root: {
+        paddingTop: theme.spacing(20),
+        paddingBottom: theme.spacing(10),
+		width: "100%",
+        display: 'flex',
+        position: 'relative',
     },
     cardWrapper: {
-      	zIndex: 1,
+          zIndex: 1,
     },
     card: {
       	display: 'flex',
@@ -50,7 +54,7 @@ const styles = theme => ({
       	position: 'absolute',
       	top: '-10%',
       	left: '-10%',
-      	maxWidth: 600,
+      	width: 600,
     },
     curvyLines: {
         pointerEvents: 'none',
@@ -64,7 +68,8 @@ function HeroAnimation(props) {
     const { classes } = props;
     
     return (
-        <Container className={classes.root} component="section" maxWidth={false}>
+        <div className={classes.preroot}>
+        <Container className={classes.root} component="section">
             <img src={background} className={classes.curvyLines} alt="curvy lines" />
             <Grid container>
                 <Grid item xs={12} md={6} className={classes.cardWrapper}>
@@ -92,6 +97,7 @@ function HeroAnimation(props) {
                 </Grid>
             </Grid>
         </Container>
+        </div>
     );
 }
 

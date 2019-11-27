@@ -26,9 +26,9 @@ const styles = theme => ({
 		display: 'flex',
 		backgroundColor: theme.palette.secondary.light,
 		borderBottomStyle: 'solid',
-		borderBottomColor: 'red',
+		borderBottomColor: '#0082D9',
 		borderTopStyle: 'solid',
-		borderTopColor: 'red',
+		borderTopColor: '#0082D9',
 	},
 	container: {
 		marginTop: theme.spacing(8),

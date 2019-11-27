@@ -16,7 +16,7 @@ const styles = theme => ({
 		overflow: 'hidden',
 		backgroundColor: theme.palette.secondary.light,
 		borderBottomStyle: 'solid',
-		borderBottomColor: 'red',
+		borderBottomColor: '#0082D9',
 	},
 	container: {
 		marginTop: theme.spacing(15),
@@ -31,7 +31,7 @@ const styles = theme => ({
 		padding: theme.spacing(0, 5),
 	},
 	image: {
-		height: 55,
+		height: 75,
 	},
 	title: {
 		marginTop: theme.spacing(5),

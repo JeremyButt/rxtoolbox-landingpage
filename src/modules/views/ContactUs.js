@@ -15,8 +15,8 @@ const styles = theme => ({
 	root: {
 		paddingTop: theme.spacing(15),
 		paddingBottom: theme.spacing(10),
-		paddingLeft: theme.spacing(10),
 		display: 'flex',
+        position: 'relative',
 	},
 	cardWrapper: {
 		zIndex: 1,
@@ -61,9 +61,27 @@ const styles = theme => ({
 function ProductCTA(props) {
 	const { classes } = props;
 	const [open, setOpen] = React.useState(false);
+	const [status, setStatus] = React.useState("");
 
-	const handleSubmit = event => {
-		event.preventDefault();
+	const handleSubmit = (ev) => {
+		ev.preventDefault();
+		const form = ev.target;
+		const data = new FormData(form);
+		const xhr = new XMLHttpRequest();
+		xhr.open(form.method, form.action);
+		xhr.setRequestHeader("Accept", "application/json");
+		xhr.onreadystatechange = () => {
+		if (xhr.readyState !== XMLHttpRequest.DONE) return;
+		if (xhr.status === 200) {
+			form.reset();
+			setStatus("SUCCESS");
+			console.log("Message SENT!");
+		} else {
+			setStatus("ERROR");
+			console.log("Message NOT SENT!");
+		}
+		};
+		xhr.send(data);
 		setOpen(true);
 	};
 
@@ -76,14 +94,19 @@ function ProductCTA(props) {
 			<Grid container>
 				<Grid item xs={12} md={6} className={classes.cardWrapper}>
 					<div className={classes.card}>
-						<form onSubmit={handleSubmit} className={classes.cardContent}>
+						<form 
+							onSubmit={handleSubmit} 
+							className={classes.cardContent}
+        					action="https://formspree.io/xnqnnboy"
+        					method="POST"
+						>
 							<Typography variant="h2" component="h2" gutterBottom>
 								Want more information?
 							</Typography>
 							<Typography variant="h5">
 								Enter your email address and we will be in touch.
 							</Typography>
-							<TextField noBorder className={classes.textField} placeholder="Your email" />
+							<TextField noBorder className={classes.textField} placeholder="Your email" type="email" name="email"/>
 							<Button type="submit" color="primary" variant="contained" className={classes.button}>
 								Submit
 							</Button>

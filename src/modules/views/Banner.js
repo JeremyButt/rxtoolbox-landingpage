@@ -6,7 +6,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-import logo from '../static/img/logo_nobackground.png';
+// import logo from '../../../public/logo';
 
 const useStyles = makeStyles(theme => ({
 	banner:{
@@ -23,6 +23,9 @@ const useStyles = makeStyles(theme => ({
 		paddingLeft: '2em',
 		color: 'inherit',
     },
+    icon: {
+        paddingTop: "5px"
+    }
 }));
   
 
@@ -33,14 +36,13 @@ export default function Banner () {
     return (
         <AppBar position="static" className={classes.banner}>
             <Toolbar>
-                <img src={logo} 
-                    alt="logo" 
-                    height="70" 
-                    width="80" 
-                />
-                <Typography variant="h6" className={classes.title}>
-                    RxToolbox
-                </Typography>
+                <div className={classes.title}>
+                    <img src="/logo.png" 
+                        alt="logo" 
+                        height="60"
+                        className={classes.icon}
+                    />
+                </div>
                 <Button color="inherit" href="#contact">Contact Us</Button>
             </Toolbar>
         </AppBar>
